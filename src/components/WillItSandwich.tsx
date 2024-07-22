@@ -43,11 +43,11 @@ export default function WillItSandwich() {
     <>
       <form onSubmit={handleSubmit} className="mb-5">
         <textarea name="ingredients" placeholder="List your ingredient's here, separated by commas" 
-          className="border border-gray-400 rounded-md p-5 text-black w-full min-h-32 mb-5 outline-none focus:ring-4 focus:ring-yellow-500 focus:border-yellow-600 text-xl"/>
-        <button type="submit" className="bg-red-700 hover:bg-red-800 text-xl rounded-md py-5 text-white text-center w-full">Generate Sandwiches</button>
+          className="border border-gray-400 rounded-md p-5 text-black w-full min-h-32 mb-5 outline-none focus:ring-4 focus:ring-lime-400 focus:border-lime-600 text-xl"/>
+        <button type="submit" className="bg-lime-600 hover:bg-lime-700 text-xl rounded-md py-5 text-white text-center w-full">Generate Sandwiches</button>
       </form>
       {recipes &&
-      <div className="bg-yellow-100 p-5 rounded-md">
+      <div className="bg-lime-100 p-5 rounded-md">
         <Markdown remarkPlugins={[remarkGfm]}>{recipes}</Markdown>
       </div>
       }
