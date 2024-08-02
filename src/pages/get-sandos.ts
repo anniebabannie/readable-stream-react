@@ -11,7 +11,7 @@ export const POST: APIRoute = async ({ params, request }) => {
     );
   }
 
-  const ollama = new Ollama({ host: 'http://will-it-sandwich-ollama.flycast' })
+  const ollama = new Ollama({ host: 'http://localhost:8000' })
 
   const response = await ollama.generate({
     model: 'llama3',
